@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasar's Contact Form</title>
+    <link rel="stylesheet" href="./nero.css" />
+  </head>
+  <body>
+    <form
+      action="https://formspree.io/f/mrgrbjge"
+      method="POST"
+      class="contact-form"
+    >
+      <h1 class="contact-heading">Contact Us</h1>
+
+      <!-- Name -->
+      <div class="contact-div">
+        <label class="contact-info" for="name"> Your Name: </label>
+        <input
+          class="Contact-input"
+          type="text"
+          name="name"
+          required
+          placeholder="Your Name"
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="contact-div">
+        <label class="contact-info" for="Email"> Your email: </label>
+        <input
+          class="Contact-input"
+          type="email"
+          name="Email"
+          required
+          placeholder="Example@Here.com"
+        />
+      </div>
+
+      <!-- Tel -->
+      <div class="contact-div">
+        <label class="contact-info" for="Tel"> Your tel: </label>
+        <input
+          class="Contact-input"
+          type="tel"
+          name="Tel"
+          required
+          placeholder="10111"
+        />
+      </div>
+
+      <!-- Message -->
+      <div class="contact-div">
+        <label class="contact-info"> Your message: </label>
+        <textarea
+          class="contact-message"
+          name="message"
+          placeholder="Your Message"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="contact-button">Send</button>
+    </form>
+  </body>
+</html>
